@@ -16,7 +16,8 @@ const postShema = new Shema({
         required: true
     },
     creator: {
-        type: Object,
+        type: Shema.Types.ObjectId,
+        ref: "User",
         required: true
     }
 }, 
